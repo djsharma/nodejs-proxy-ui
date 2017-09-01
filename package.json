@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-proxy-ui",
+  "version": "1.0.0",
+  "description": "nodejs proxy ui over angularjs for integrated view of different services",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djsharma/nodejs-proxy-ui.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "angular",
+    "proxy",
+    "app",
+    "handlers",
+    "services"
+  ],
+  "author": "Dhananjay Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djsharma/nodejs-proxy-ui/issues"
+  },
+  "homepage": "https://github.com/djsharma/nodejs-proxy-ui#readme"
+}
