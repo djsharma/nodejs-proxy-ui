@@ -2,7 +2,7 @@
 * @Author: dhananjaysharma
 * @Date:   2017-09-02 03:03:30
 * @Last Modified by:   dhananjaysharma
-* @Last Modified time: 2017-09-02 16:13:09
+* @Last Modified time: 2017-09-02 16:25:34
 */
 
 'use strict';
@@ -15,10 +15,15 @@ var config = require('./config/server.conf');
 var logger = require('morgan');
 var middleware = require('./middlewares/middleware');
 var routes = require('./routers/routes');
+var handleProxy = require('./config/proxy.conf.js')
+
 
 //create app for express
 var app = express();
 var router = express.Router();
+
+//proxy route hook
+app.use('/api/gen', handleProxy.genericApiProxy);
 
 //server middlware hook
 app.use(cookieParser());
