@@ -2,7 +2,7 @@
 * @Author: dhananjaysharma
 * @Date:   2017-09-02 03:03:30
 * @Last Modified by:   dhananjaysharma
-* @Last Modified time: 2017-09-02 16:25:34
+* @Last Modified time: 2017-09-02 16:39:32
 */
 
 'use strict';
@@ -35,6 +35,9 @@ app.use(logger('combined'));
 
 //external middleware hook
 app.use(middleware.middle);
+
+//static files serve
+app.use(express.static(path.join(__dirname , './app')));
 
 //load routes 
 routes.load(router);
