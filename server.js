@@ -2,7 +2,7 @@
 * @Author: dhananjaysharma
 * @Date:   2017-09-02 03:03:30
 * @Last Modified by:   dhananjaysharma
-* @Last Modified time: 2017-09-02 16:06:01
+* @Last Modified time: 2017-09-02 16:13:09
 */
 
 'use strict';
@@ -14,6 +14,8 @@ var path = require('path');
 var config = require('./config/server.conf');
 var logger = require('morgan');
 var middleware = require('./middlewares/middleware');
+var routes = require('./routers/routes');
+
 //create app for express
 var app = express();
 var router = express.Router();
@@ -28,6 +30,12 @@ app.use(logger('combined'));
 
 //external middleware hook
 app.use(middleware.middle);
+
+//load routes 
+routes.load(router);
+
+//router hook
+app.use('/',router);
 
 //server initialization on express
 var server = app.listen(config.dev.SERVER_PORT,function (arg) {
