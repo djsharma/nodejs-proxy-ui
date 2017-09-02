@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-proxy-ui",
+  "description": "nodejs proxy ui over angularjs for integrated view of different services",
+  "main": "server.js",
+  "authors": [
+    "Dhananjay Sharma"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "express",
+    "angular",
+    "proxy",
+    "app",
+    "handlers",
+    "services"
+  ],
+  "homepage": "https://github.com/djsharma/nodejs-proxy-ui",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
