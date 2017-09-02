@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/djsharma/nodejs-proxy-ui/issues"
   },
-  "homepage": "https://github.com/djsharma/nodejs-proxy-ui#readme"
+  "homepage": "https://github.com/djsharma/nodejs-proxy-ui#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
